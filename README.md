@@ -7,7 +7,7 @@ This is a fast image-resizing framework written in [Metal Performance Shaders](h
  - [Bicubic](https://en.wikipedia.org/wiki/Bicubic_interpolation)
 
 ## Demo
-This image is scaled to 4x in all methods.
+This image is scaled to 8x in all methods.
 ### Nearest-neighbor
 ![](screenshots/nearest.png)
 

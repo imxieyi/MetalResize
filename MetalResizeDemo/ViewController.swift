@@ -45,7 +45,7 @@ class ViewController: UIViewController, UINavigationControllerDelegate, UIImageP
         background.async {
             do {
                 let mr = try MetalResize()
-                self.outImage = mr.resize(self.inImage, 4.0, type)
+                self.outImage = mr.resize(self.inImage, 2.0, type)
                 let end = DispatchTime.now()
                 let nanotime = end.uptimeNanoseconds - start.uptimeNanoseconds
                 let timeInterval = Double(nanotime) / 1_000_000_000
