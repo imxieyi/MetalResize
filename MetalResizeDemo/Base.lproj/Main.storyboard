@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="ipad9_7" orientation="landscape">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MetalResizeDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="5NF-kc-IAy">
+                                <rect key="frame" x="0.0" y="20" width="508" height="672"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="BF2-xo-G0Z">
+                                <rect key="frame" x="516" y="20" width="508" height="672"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="arB-q7-2pp">
+                                <rect key="frame" x="374" y="688" width="59" height="50"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                <state key="normal" title="Pick"/>
+                                <connections>
+                                    <action selector="pick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8iS-3X-hGt"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nr1-gN-9jK">
+                                <rect key="frame" x="457" y="688" width="110" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="dSd-n9-IGo"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                <state key="normal" title="Process"/>
+                                <connections>
+                                    <action selector="process:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mQO-4A-1qD"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="waP-YB-QsU">
+                                <rect key="frame" x="591" y="688" width="68" height="50"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                <state key="normal" title="Save"/>
+                                <connections>
+                                    <action selector="save:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eVt-V4-u7a"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ready" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uvX-8n-No1">
+                                <rect key="frame" x="0.0" y="742" width="1024" height="22"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="22" id="HaX-1K-xvB"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="waP-YB-QsU" firstAttribute="leading" secondItem="nr1-gN-9jK" secondAttribute="trailing" constant="24" id="3Qc-Mq-L67"/>
+                            <constraint firstItem="BF2-xo-G0Z" firstAttribute="leading" secondItem="5NF-kc-IAy" secondAttribute="trailing" constant="8" id="6Na-98-T96"/>
+                            <constraint firstItem="waP-YB-QsU" firstAttribute="height" secondItem="arB-q7-2pp" secondAttribute="height" id="BZz-XV-HQA"/>
+                            <constraint firstItem="5NF-kc-IAy" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="CbF-Yl-yYd"/>
+                            <constraint firstItem="BF2-xo-G0Z" firstAttribute="width" secondItem="5NF-kc-IAy" secondAttribute="width" id="L5E-fQ-XBa"/>
+                            <constraint firstItem="nr1-gN-9jK" firstAttribute="leading" secondItem="arB-q7-2pp" secondAttribute="trailing" constant="24" id="N97-JD-gP4"/>
+                            <constraint firstItem="5NF-kc-IAy" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Qxa-50-5sA"/>
+                            <constraint firstItem="uvX-8n-No1" firstAttribute="top" secondItem="nr1-gN-9jK" secondAttribute="bottom" constant="4" id="aj6-I4-u55"/>
+                            <constraint firstItem="BF2-xo-G0Z" firstAttribute="top" secondItem="5NF-kc-IAy" secondAttribute="top" id="aoI-ok-nbv"/>
+                            <constraint firstItem="nr1-gN-9jK" firstAttribute="bottom" secondItem="arB-q7-2pp" secondAttribute="bottom" id="b4k-U8-S01"/>
+                            <constraint firstItem="BF2-xo-G0Z" firstAttribute="bottom" secondItem="nr1-gN-9jK" secondAttribute="top" constant="4" id="bH8-mA-ROw"/>
+                            <constraint firstItem="nr1-gN-9jK" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="bUt-N7-020"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="uvX-8n-No1" secondAttribute="bottom" constant="4" id="cal-yu-ETL"/>
+                            <constraint firstItem="BF2-xo-G0Z" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="coO-1e-Zmo"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="uvX-8n-No1" secondAttribute="trailing" id="ji0-FX-xef"/>
+                            <constraint firstItem="nr1-gN-9jK" firstAttribute="height" secondItem="arB-q7-2pp" secondAttribute="height" id="psJ-A6-tf9"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="BF2-xo-G0Z" secondAttribute="trailing" id="rRI-IK-2T1"/>
+                            <constraint firstItem="nr1-gN-9jK" firstAttribute="bottom" secondItem="waP-YB-QsU" secondAttribute="bottom" id="sLk-pV-RqD"/>
+                            <constraint firstItem="5NF-kc-IAy" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="tCT-9I-R7d"/>
+                            <constraint firstItem="uvX-8n-No1" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="wbu-HQ-cT7"/>
+                            <constraint firstItem="BF2-xo-G0Z" firstAttribute="bottom" secondItem="5NF-kc-IAy" secondAttribute="bottom" id="yAm-Gj-4kb"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="inView" destination="5NF-kc-IAy" id="Ecf-e2-j0M"/>
+                        <outlet property="outView" destination="BF2-xo-G0Z" id="ld3-UN-gfY"/>
+                        <outlet property="pickBtn" destination="arB-q7-2pp" id="Mth-wc-6yr"/>
+                        <outlet property="processBtn" destination="nr1-gN-9jK" id="avl-gW-CBz"/>
+                        <outlet property="saveBtn" destination="waP-YB-QsU" id="egt-rK-JXC"/>
+                        <outlet property="status" destination="uvX-8n-No1" id="xcs-qt-Rbp"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="117.77343749999999" y="118.75"/>
+        </scene>
+    </scenes>
+</document>
